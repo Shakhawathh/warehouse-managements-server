@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const { ObjectID } = require('bson');
+
 const port = process.env.port || 5000
 require('dotenv').config()
 
@@ -70,5 +70,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log('Listening to port', port)
-});
+})
 
